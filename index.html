@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prénom Nom – E-portfolio</title>
+  <meta name="description" content="E-portfolio de Prénom Nom : parcours, compétences et réalisations.">
+  <style>
+    :root {
+      --bg: #fafaf7;
+      --surface: #ffffff;
+      --text: #1f2328;
+      --muted: #5f6872;
+      --accent: #2f6fed;
+      --border: #e4e4df;
+      --radius: 14px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14161a;
+        --surface: #1c1f25;
+        --text: #eceef1;
+        --muted: #9aa3ae;
+        --accent: #7ba5ff;
+        --border: #2b2f37;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    a { color: var(--accent); }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+    /* Navigation */
+    header.nav {
+      position: sticky; top: 0; z-index: 10;
+      background: color-mix(in srgb, var(--bg) 88%, transparent);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav .wrap { display: flex; justify-content: space-between; align-items: center; padding-top: 14px; padding-bottom: 14px; flex-wrap: wrap; gap: 10px; }
+    .logo { font-weight: 700; text-decoration: none; color: var(--text); }
+    nav ul { list-style: none; display: flex; gap: 18px; margin: 0; padding: 0; flex-wrap: wrap; }
+    nav a { text-decoration: none; color: var(--muted); font-size: .95rem; }
+    nav a:hover { color: var(--accent); }
+
+    /* Sections */
+    section { padding: 64px 0 24px; }
+    h1 { font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.15; margin: 0 0 12px; }
+    h2 { font-size: 1.6rem; margin: 0 0 24px; }
+    h2::after { content: ""; display: block; width: 44px; height: 3px; background: var(--accent); margin-top: 8px; border-radius: 2px; }
+    h3 { margin: 0 0 4px; font-size: 1.1rem; }
+    p { margin: 0 0 12px; }
+    .muted { color: var(--muted); }
+
+    /* Hero */
+    .hero { padding-top: 72px; display: grid; grid-template-columns: 1fr 200px; gap: 40px; align-items: center; }
+    .hero .tagline { font-size: 1.2rem; color: var(--muted); }
+    .avatar {
+      width: 200px; height: 200px; border-radius: 50%;
+      object-fit: cover; background: var(--border);
+      display: grid; place-items: center; color: var(--muted); font-size: .85rem; text-align: center;
+    }
+    .btn {
+      display: inline-block; padding: 10px 20px; border-radius: 999px;
+      background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; margin-right: 8px;
+    }
+    .btn.ghost { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+
+    /* Cartes */
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 18px; }
+    .card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 20px;
+    }
+    .card .tag {
+      display: inline-block; font-size: .78rem; padding: 2px 10px; margin: 6px 6px 0 0;
+      border-radius: 999px; border: 1px solid var(--border); color: var(--muted);
+    }
+    .card a.more { display: inline-block; margin-top: 10px; font-weight: 600; text-decoration: none; }
+
+    /* Parcours */
+    .timeline { border-left: 2px solid var(--border); padding-left: 22px; }
+    .timeline .item { position: relative; margin-bottom: 26px; }
+    .timeline .item::before {
+      content: ""; position: absolute; left: -29px; top: 8px;
+      width: 12px; height: 12px; border-radius: 50%; background: var(--accent);
+    }
+    .date { font-size: .85rem; color: var(--muted); }
+
+    /* Compétences */
+    .skill { margin-bottom: 16px; }
+    .skill .label { display: flex; justify-content: space-between; font-size: .95rem; margin-bottom: 4px; }
+    .bar { height: 8px; background: var(--border); border-radius: 99px; overflow: hidden; }
+    .bar span { display: block; height: 100%; background: var(--accent); border-radius: 99px; }
+
+    footer { margin-top: 64px; padding: 28px 0; border-top: 1px solid var(--border); color: var(--muted); font-size: .9rem; text-align: center; }
+
+    @media (max-width: 680px) {
+      .hero { grid-template-columns: 1fr; text-align: left; }
+      .avatar { width: 140px; height: 140px; order: -1; }
+      section { padding-top: 48px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#accueil">Prénom Nom</a>
+    <nav>
+      <ul>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#parcours">Parcours</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#reflexion">Réflexion</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ACCUEIL -->
+  <section id="accueil" class="hero">
+    <div>
+      <h1>Bonjour, je suis Prénom Nom.</h1>
+      <p class="tagline">[Ton statut : étudiant(e) en … / Futur(e) … / Développeur(se) …] à la recherche de [stage / alternance / emploi].</p>
+      <p>
+        <a class="btn" href="#projets">Voir mes projets</a>
+        <a class="btn ghost" href="#contact">Me contacter</a>
+      </p>
+    </div>
+    <!-- Remplace par : <img class="avatar" src="photo.jpg" alt="Photo de Prénom Nom"> -->
+    <div class="avatar">Ta photo ici</div>
+  </section>
+
+  <!-- À PROPOS -->
+  <section id="apropos">
+    <h2>À propos</h2>
+    <p>Présente-toi en quelques lignes : qui tu es, ce qui te motive, ce que tu cherches. Reste simple et authentique.</p>
+    <p class="muted">Centres d'intérêt : [lecture, sport, musique, bénévolat…]</p>
+  </section>
+
+  <!-- PARCOURS -->
+  <section id="parcours">
+    <h2>Parcours</h2>
+    <div class="timeline">
+      <div class="item">
+        <div class="date">2025 – Aujourd'hui</div>
+        <h3>[Intitulé de la formation]</h3>
+        <p class="muted">[Établissement, ville]</p>
+        <p>Une ou deux phrases sur le contenu et ce que tu y apprends.</p>
+      </div>
+      <div class="item">
+        <div class="date">Été 2025</div>
+        <h3>[Stage / Job / Expérience]</h3>
+        <p class="muted">[Structure, ville]</p>
+        <p>Tes missions et ce que cette expérience t'a apporté.</p>
+      </div>
+      <div class="item">
+        <div class="date">2022 – 2025</div>
+        <h3>[Diplôme précédent]</h3>
+        <p class="muted">[Établissement, ville]</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPÉTENCES -->
+  <section id="competences">
+    <h2>Compétences</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Compétences techniques</h3>
+        <div class="skill"><div class="label"><span>[Compétence 1]</span><span>80 %</span></div><div class="bar"><span style="width:80%"></span></div></div>
+        <div class="skill"><div class="label"><span>[Compétence 2]</span><span>65 %</span></div><div class="bar"><span style="width:65%"></span></div></div>
+        <div class="skill"><div class="label"><span>[Compétence 3]</span><span>50 %</span></div><div class="bar"><span style="width:50%"></span></div></div>
+      </div>
+      <div class="card">
+        <h3>Compétences transversales</h3>
+        <span class="tag">Travail en équipe</span>
+        <span class="tag">Organisation</span>
+        <span class="tag">Communication</span>
+        <span class="tag">Autonomie</span>
+        <span class="tag">Esprit d'analyse</span>
+      </div>
+      <div class="card">
+        <h3>Langues</h3>
+        <p>Français : langue maternelle<br>Anglais : [niveau, ex. B2]<br>[Autre langue] : [niveau]</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section id="projets">
+    <h2>Projets &amp; réalisations</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>[Titre du projet 1]</h3>
+        <p class="muted">Contexte : [cadre, durée, individuel ou en groupe]</p>
+        <p>Ce que tu as fait, ton rôle, le résultat obtenu.</p>
+        <span class="tag">Tag 1</span><span class="tag">Tag 2</span>
+        <br><a class="more" href="#">Voir le projet →</a>
+      </article>
+      <article class="card">
+        <h3>[Titre du projet 2]</h3>
+        <p class="muted">Contexte : [cadre, durée]</p>
+        <p>Ce que tu as fait, ton rôle, le résultat obtenu.</p>
+        <span class="tag">Tag 1</span><span class="tag">Tag 3</span>
+        <br><a class="more" href="#">Voir le projet →</a>
+      </article>
+      <article class="card">
+        <h3>[Titre du projet 3]</h3>
+        <p class="muted">Contexte : [cadre, durée]</p>
+        <p>Ce que tu as fait, ton rôle, le résultat obtenu.</p>
+        <span class="tag">Tag 2</span><span class="tag">Tag 4</span>
+        <br><a class="more" href="#">Voir le projet →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- RÉFLEXION -->
+  <section id="reflexion">
+    <h2>Réflexion &amp; bilan</h2>
+    <div class="card">
+      <p>Explique ce que ces expériences t'ont appris, les difficultés rencontrées et comment tu les as surmontées, ainsi que tes objectifs pour la suite.</p>
+      <p class="muted">Cette partie montre ta capacité à prendre du recul : elle est souvent la plus appréciée.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Une question, une opportunité ? N'hésite pas à m'écrire.</p>
+    <p>
+      <a class="btn" href="mailto:prenom.nom@exemple.fr">Envoyer un mail</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/ton-profil" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn ghost" href="cv.pdf" target="_blank" rel="noopener">Télécharger mon CV</a>
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">© <span id="year"></span> Prénom Nom – E-portfolio</div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
