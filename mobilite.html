@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mobilité internationale – Prénom Nom</title>
+  <meta name="description" content="PCE, LV2, anglais et projet de mobilité de Prénom Nom.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="site.js" defer></script>
+</head>
+<body class="p-mobilite">
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="nom" href="index.html">Prénom Nom</a>
+    <nav aria-label="Pages">
+      <ul>
+        <li><a href="ingenierie.html">Ingénierie</a></li>
+        <li><a href="mobilite.html" aria-current="page">International</a></li>
+        <li><a href="engagement.html">Durable et citoyen</a></li>
+        <li><a href="sport.html">Sport</a></li>
+        <li><a href="carriere.html">Carrière</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="entete-page">
+  <div class="wrap">
+    <h1>Mobilité internationale</h1>
+    <p>Mes langues, mes expériences à l'international et mon projet de départ.</p>
+  </div>
+</section>
+
+<main class="contenu" id="contenu">
+  <div class="wrap">
+
+    <div class="onglets" role="tablist" aria-label="Mobilité internationale">
+      <button type="button" role="tab" id="onglet-pce" aria-controls="pce" aria-selected="true">PCE</button>
+      <button type="button" role="tab" id="onglet-lv2" aria-controls="lv2" aria-selected="false" tabindex="-1">LV2</button>
+      <button type="button" role="tab" id="onglet-anglais" aria-controls="anglais" aria-selected="false" tabindex="-1">Anglais</button>
+      <button type="button" role="tab" id="onglet-mobilite" aria-controls="projet-mobilite" aria-selected="false" tabindex="-1">Projet de mobilité</button>
+    </div>
+
+    <section class="panneau" id="pce" role="tabpanel" aria-labelledby="onglet-pce">
+      <h2>PCE</h2>
+      <p class="chapo">[Explique en une phrase ce qu'est ton PCE dans ta formation.]</p>
+      <div class="deux">
+        <div>
+          <h3>Le contexte</h3>
+          <p>[Quand, où, avec qui, pendant combien de temps.]</p>
+        </div>
+        <div>
+          <h3>Ce que j'ai fait</h3>
+          <p>[Tes activités concrètes, les personnes rencontrées, les difficultés surmontées.]</p>
+        </div>
+        <div>
+          <h3>Ce que j'en retiens</h3>
+          <p>[Ce que cette expérience t'a appris sur toi, sur ta façon de travailler et sur d'autres cultures.]</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panneau" id="lv2" role="tabpanel" aria-labelledby="onglet-lv2">
+      <h2>LV2</h2>
+      <p class="chapo">[La langue que tu étudies en plus de l'anglais.]</p>
+      <div class="deux">
+        <div>
+          <h3>Langue et niveau</h3>
+          <p>[Langue, niveau actuel, certification éventuelle avec la date et le score.]</p>
+        </div>
+        <div>
+          <h3>Comment je la pratique</h3>
+          <p>[Cours, séjours, échanges, lectures, films : ce qui te fait progresser en dehors des séances.]</p>
+        </div>
+        <div>
+          <h3>Mon objectif</h3>
+          <p>[Le niveau que tu veux atteindre et ce que tu comptes faire pour y arriver.]</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panneau" id="anglais" role="tabpanel" aria-labelledby="onglet-anglais">
+      <h2>Anglais</h2>
+      <p class="chapo">[Ton niveau et la façon dont tu t'en sers.]</p>
+      <div class="deux">
+        <div>
+          <h3>Niveau et certification</h3>
+          <p>[Test passé, score, date, niveau obtenu.]</p>
+        </div>
+        <div>
+          <h3>Où je m'en sers</h3>
+          <p>[Cours, projets, stage, voyages, lectures techniques.]</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panneau" id="projet-mobilite" role="tabpanel" aria-labelledby="onglet-mobilite">
+      <h2>Projet de mobilité</h2>
+      <p class="chapo">[Ton projet de départ à l'étranger, en une phrase.]</p>
+      <div class="deux">
+        <div>
+          <h3>Destinations visées</h3>
+          <p>[Pays, universités ou entreprises qui t'intéressent, avec les raisons de ces choix.]</p>
+        </div>
+        <div>
+          <h3>Pourquoi partir</h3>
+          <p>[Ce que tu cherches : un programme précis, une culture de travail, une langue, une expérience de recherche.]</p>
+        </div>
+        <div>
+          <h3>Calendrier et démarches</h3>
+          <p>[Quand tu veux partir, les démarches faites et celles qui restent.]</p>
+        </div>
+      </div>
+    </section>
+
+    <nav class="suite" aria-label="Pages voisines">
+      <a href="ingenierie.html">Page précédente : Parcours ingénieur</a>
+      <a href="engagement.html">Page suivante : Développement durable et engagement citoyen</a>
+    </nav>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="annee"></span> Prénom Nom</span>
+    <a href="index.html#contact">Me contacter</a>
+  </div>
+</footer>
+</body>
+</html>

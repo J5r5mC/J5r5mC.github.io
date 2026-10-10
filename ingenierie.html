@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parcours ingénieur – Prénom Nom</title>
+  <meta name="description" content="Projets et productions de Prénom Nom dans sa formation d'ingénieur.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="site.js" defer></script>
+</head>
+<body class="p-ingenierie">
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="nom" href="index.html">Prénom Nom</a>
+    <nav aria-label="Pages">
+      <ul>
+        <li><a href="ingenierie.html" aria-current="page">Ingénierie</a></li>
+        <li><a href="mobilite.html">International</a></li>
+        <li><a href="engagement.html">Durable et citoyen</a></li>
+        <li><a href="sport.html">Sport</a></li>
+        <li><a href="carriere.html">Carrière</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="entete-page">
+  <div class="wrap">
+    <h1>Parcours ingénieur</h1>
+    <p>Ce que j'ai appris et réalisé dans ma formation, à travers mes projets et mes productions.</p>
+  </div>
+</section>
+
+<main class="contenu" id="contenu">
+  <div class="wrap">
+
+    <div class="onglets" role="tablist" aria-label="Parcours ingénieur">
+      <button type="button" role="tab" id="onglet-projets" aria-controls="projets" aria-selected="true">Projets</button>
+      <button type="button" role="tab" id="onglet-productions" aria-controls="productions" aria-selected="false" tabindex="-1">Productions</button>
+    </div>
+
+    <section class="panneau" id="projets" role="tabpanel" aria-labelledby="onglet-projets">
+      <h2>Projets</h2>
+      <p class="chapo">Les projets menés en cours, en équipe ou seul(e).</p>
+
+      <article class="projet">
+        <div class="capture">
+          <!-- Remplace par : <img src="projet1.png" alt="Capture du projet 1"> -->
+          <div class="vide">Capture d'écran ou photo du projet</div>
+        </div>
+        <div>
+          <h3>[Titre du projet 1]</h3>
+          <p class="cadre">[Projet de groupe, 4 personnes, 3 mois]</p>
+          <p>Décris le problème de départ, ce que tu as réalisé personnellement et le résultat, avec des chiffres quand tu en as (durée, performances, nombre d'utilisateurs).</p>
+          <p class="tech"><strong>Outils :</strong> [outil 1], [outil 2], [outil 3]</p>
+          <p><a href="#">Voir le projet</a></p>
+        </div>
+      </article>
+
+      <article class="projet">
+        <div class="capture">
+          <div class="vide">Capture d'écran ou photo du projet</div>
+        </div>
+        <div>
+          <h3>[Titre du projet 2]</h3>
+          <p class="cadre">[Projet individuel, 3 semaines]</p>
+          <p>Le contexte, ta démarche, ce que le projet t'a appris. Une phrase honnête sur une difficulté rencontrée rend le texte plus crédible.</p>
+          <p class="tech"><strong>Outils :</strong> [outil 1], [outil 2]</p>
+          <p><a href="#">Voir le projet</a></p>
+        </div>
+      </article>
+
+      <article class="projet">
+        <div class="capture">
+          <div class="vide">Capture d'écran ou photo du projet</div>
+        </div>
+        <div>
+          <h3>[Titre du projet 3]</h3>
+          <p class="cadre">[Projet de fin d'année, binôme]</p>
+          <p>Ce qu'il fallait faire, comment vous vous êtes réparti le travail, ce que vous avez livré.</p>
+          <p class="tech"><strong>Outils :</strong> [outil 1], [outil 2], [outil 3]</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="panneau" id="productions" role="tabpanel" aria-labelledby="onglet-productions">
+      <h2>Productions</h2>
+      <p class="chapo">Les documents et livrables que j'ai produits : rapports, posters, présentations, code.</p>
+
+      <div class="prod">
+        <div>
+          <h3>[Titre du rapport]</h3>
+          <p class="cadre">[Rapport de projet, mois année]</p>
+          <p>Une ou deux phrases sur le contenu du document et ton rôle dans sa rédaction.</p>
+        </div>
+        <a class="lien" href="#">Ouvrir le fichier</a>
+      </div>
+
+      <div class="prod">
+        <div>
+          <h3>[Titre du poster ou de la présentation]</h3>
+          <p class="cadre">[Soutenance orale, mois année]</p>
+          <p>Le contexte de la présentation et ce que tu as voulu montrer.</p>
+        </div>
+        <a class="lien" href="#">Ouvrir le fichier</a>
+      </div>
+
+      <div class="prod">
+        <div>
+          <h3>[Nom du dépôt ou du programme]</h3>
+          <p class="cadre">[Code, langage utilisé]</p>
+          <p>Ce que fait le programme et ce que tu y as développé.</p>
+        </div>
+        <a class="lien" href="#">Voir le code</a>
+      </div>
+    </section>
+
+    <nav class="suite" aria-label="Pages voisines">
+      <a href="index.html">Retour à l'accueil</a>
+      <a href="mobilite.html">Page suivante : Mobilité internationale</a>
+    </nav>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="annee"></span> Prénom Nom</span>
+    <a href="index.html#contact">Me contacter</a>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Développement de carrière – Prénom Nom</title>
+  <meta name="description" content="Stages, projet professionnel et CV de Prénom Nom.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="site.js" defer></script>
+</head>
+<body class="p-carriere">
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="nom" href="index.html">Prénom Nom</a>
+    <nav aria-label="Pages">
+      <ul>
+        <li><a href="ingenierie.html">Ingénierie</a></li>
+        <li><a href="mobilite.html">International</a></li>
+        <li><a href="engagement.html">Durable et citoyen</a></li>
+        <li><a href="sport.html">Sport</a></li>
+        <li><a href="carriere.html" aria-current="page">Carrière</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="entete-page">
+  <div class="wrap">
+    <h1>Développement de carrière</h1>
+    <p>Mes stages, mon projet professionnel et les documents qui me présentent.</p>
+  </div>
+</section>
+
+<main class="contenu" id="contenu">
+  <div class="wrap">
+
+    <div class="onglets" role="tablist" aria-label="Développement de carrière">
+      <button type="button" role="tab" id="onglet-stages" aria-controls="stages" aria-selected="true">Stages</button>
+      <button type="button" role="tab" id="onglet-pep" aria-controls="pep" aria-selected="false" tabindex="-1">PEP</button>
+      <button type="button" role="tab" id="onglet-cv" aria-controls="cv" aria-selected="false" tabindex="-1">CV et réseau</button>
+    </div>
+
+    <section class="panneau" id="stages" role="tabpanel" aria-labelledby="onglet-stages">
+      <h2>Stages</h2>
+      <p class="chapo">Mes stages et expériences professionnelles, du plus récent au plus ancien.</p>
+
+      <div class="exp">
+        <div class="logo">
+          <!-- Logo : <img src="logo1.png" alt="Logo de la structure"> -->
+          Logo
+        </div>
+        <div>
+          <div class="entete">
+            <h3>[Intitulé du stage]</h3>
+            <span class="dates">[Juin à juillet 2026]</span>
+          </div>
+          <p class="lieu">[Structure, ville]</p>
+          <ul>
+            <li>[Mission principale, avec un résultat chiffré si possible]</li>
+            <li>[Deuxième mission ou outil utilisé]</li>
+            <li>[Ce que tu en as retiré]</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp">
+        <div class="logo">Logo</div>
+        <div>
+          <div class="entete">
+            <h3>[Intitulé du stage ou du poste]</h3>
+            <span class="dates">[Mai à juin 2025]</span>
+          </div>
+          <p class="lieu">[Structure, ville]</p>
+          <ul>
+            <li>[Ce que tu as fait au quotidien]</li>
+            <li>[Ce que tu as découvert du fonctionnement de la structure]</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp">
+        <div class="logo">Logo</div>
+        <div>
+          <div class="entete">
+            <h3>[Stage d'observation ou job d'été]</h3>
+            <span class="dates">[Mois année]</span>
+          </div>
+          <p class="lieu">[Structure, ville]</p>
+          <p>[Ce que tu y as découvert du métier.]</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panneau" id="pep" role="tabpanel" aria-labelledby="onglet-pep">
+      <h2>PEP</h2>
+      <p class="chapo">[Présente en une phrase le métier ou le secteur que tu vises.]</p>
+      <div class="deux">
+        <div>
+          <h3>Mon projet professionnel</h3>
+          <p>[Les métiers et les secteurs qui t'attirent, et pourquoi.]</p>
+        </div>
+        <div>
+          <h3>Ce que j'ai déjà fait pour avancer</h3>
+          <p>[Rencontres avec des professionnels, forums, stages, lectures, projets qui ont précisé ton choix.]</p>
+        </div>
+        <div>
+          <h3>Mes prochaines étapes</h3>
+          <p>[Ce que tu veux faire dans les mois qui viennent : stage, spécialisation, mobilité, formation complémentaire.]</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panneau" id="cv" role="tabpanel" aria-labelledby="onglet-cv">
+      <h2>CV et réseau</h2>
+      <p class="chapo">Les documents à télécharger et les profils qui m'inspirent.</p>
+      <div class="deux">
+        <div>
+          <h3>Mon CV</h3>
+          <p>La dernière version, à jour au [mois année].</p>
+          <p><a class="btn" href="cv.pdf" target="_blank" rel="noopener">Télécharger mon CV</a></p>
+        </div>
+        <div>
+          <h3>Mon profil LinkedIn</h3>
+          <p>Pour suivre mon parcours ou échanger.</p>
+          <p><a class="btn simple" href="https://www.linkedin.com/in/ton-profil" target="_blank" rel="noopener">Voir mon profil</a></p>
+        </div>
+        <div>
+          <h3>Les profils qui m'inspirent</h3>
+          <p>[Des personnes dont le parcours t'intéresse, avec ce que tu en retiens pour toi.]</p>
+        </div>
+      </div>
+    </section>
+
+    <nav class="suite" aria-label="Pages voisines">
+      <a href="sport.html">Page précédente : Sport et autres activités</a>
+      <a href="index.html">Retour à l'accueil</a>
+    </nav>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="annee"></span> Prénom Nom</span>
+    <a href="index.html#contact">Me contacter</a>
+  </div>
+</footer>
+</body>
+</html>

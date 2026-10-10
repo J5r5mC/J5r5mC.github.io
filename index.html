@@ -3,27 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jérémy Claux, e-portfolio</title>
-  <meta name="description" content="E-portfolio de Prénom Nom : projets, parcours, compétences et engagements.">
+  <title>Prénom Nom, e-portfolio</title>
+  <meta name="description" content="E-portfolio de Prénom Nom : parcours ingénieur, mobilité internationale, engagement, activités et développement de carrière.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="site.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#contenu">Aller au contenu</a>
 
 <header class="top">
   <div class="wrap">
-    <a class="nom" href="index.html">Jérémy Claux</a>
+    <a class="nom" href="index.html">Prénom Nom</a>
     <nav aria-label="Pages">
       <ul>
-        <li><a href="projets.html">Projets</a></li>
-        <li><a href="parcours.html">Parcours</a></li>
-        <li><a href="competences.html">Compétences</a></li>
-        <li><a href="engagement.html">Engagement</a></li>
-        <li><a href="activites.html">Activités</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="ingenierie.html">Ingénierie</a></li>
+        <li><a href="mobilite.html">International</a></li>
+        <li><a href="engagement.html">Durable et citoyen</a></li>
+        <li><a href="sport.html">Sport</a></li>
+        <li><a href="carriere.html">Carrière</a></li>
       </ul>
     </nav>
   </div>
@@ -34,57 +34,80 @@
   <section class="hero">
     <div class="wrap">
       <div>
-        <h1>Jérémy Claux</h1>
-        <p class="role">Etudiant à l’ENSEEIHT en 1er année en science du numérique pour MODIA.</p>
-        <p class="detail">Toulouse</p>
-        <p class="detail">Je recherche un stage pour cet été et une alternace de 2 ans à partir de septembre 2027.</p>
+        <h1>Prénom Nom</h1>
+        <p class="role">[Étudiant(e) en … à …], intéressé(e) par [ton sujet principal, formulé précisément].</p>
+        <p class="detail">[Ville], en recherche d'[un stage de … mois à partir de …].</p>
         <div class="boutons">
-          <a class="btn" href="projets.html">Voir mes projets</a>
+          <a class="btn" href="ingenierie.html">Découvrir mes projets</a>
           <a class="btn simple" href="cv.pdf" target="_blank" rel="noopener">Télécharger mon CV</a>
         </div>
       </div>
       <div class="photo">
-        <img src="photo.jpg" alt="Portrait de Jérémy Claux">
+        <!-- Remplace la ligne ci-dessous par : <img src="photo.jpg" alt="Portrait de Prénom Nom"> -->
+        <div class="vide">Ta photo ici<br>(format portrait)</div>
       </div>
     </div>
   </section>
 
   <section class="explorer">
     <div class="wrap">
-      <h2>A propos de moi</h2>
+      <h2>Bienvenue sur mon e-portfolio</h2>
+      <p class="intro-section">Quelques lignes pour te présenter, expliquer à quoi sert ce portfolio et ce que le visiteur va y trouver. Chaque rubrique s'ouvre sur sa propre page.</p>
 
       <div class="tuiles">
-        <a class="tuile t-projets" href="projets.html">
-          <h3>Projets</h3>
-          <p>Ce que j'ai réalisé en cours, en stage ou de mon côté.</p>
+        <a class="tuile t-ingenierie" href="ingenierie.html">
+          <h3>Parcours ingénieur</h3>
+          <p>Mes projets et mes productions dans ma formation.</p>
           <span class="ouvrir">Ouvrir la page</span>
         </a>
-        <a class="tuile t-parcours" href="parcours.html">
-          <h3>Parcours</h3>
-          <p>Mes formations, stages et expériences professionnelles.</p>
+        <a class="tuile t-mobilite" href="mobilite.html">
+          <h3>Mobilité internationale</h3>
+          <p>PCE, LV2, anglais et projet de départ à l'étranger.</p>
           <span class="ouvrir">Ouvrir la page</span>
         </a>
-        <a class="tuile t-competences" href="competences.html">
-          <h3>Compétences</h3>
-          <p>Ce que je maîtrise, ce que j'apprends, les langues que je parle.</p>
+        <a class="tuile t-durable" href="engagement.html">
+          <h3>Développement durable et engagement citoyen</h3>
+          <p>Ce que je fais pour la planète et pour les autres.</p>
           <span class="ouvrir">Ouvrir la page</span>
         </a>
-        <a class="tuile t-engagement" href="engagement.html">
-          <h3>Engagement</h3>
-          <p>Ce que je fais pour les autres en dehors des cours.</p>
+        <a class="tuile t-sport" href="sport.html">
+          <h3>Sport et autres activités</h3>
+          <p>Ce qui me passionne en dehors des cours.</p>
           <span class="ouvrir">Ouvrir la page</span>
         </a>
-        <a class="tuile t-activites" href="activites.html">
-          <h3>Activités</h3>
-          <p>Ce qui me passionne en dehors de mes études.</p>
+        <a class="tuile t-carriere" href="carriere.html">
+          <h3>Développement de carrière</h3>
+          <p>Mes stages, mon projet professionnel et mon CV.</p>
           <span class="ouvrir">Ouvrir la page</span>
         </a>
-        <a class="tuile t-contact" href="contact.html">
-          <h3>Contact</h3>
+        <a class="tuile t-contact" href="#contact">
+          <h3>Me contacter</h3>
           <p>Pour un stage, un projet ou simplement échanger.</p>
-          <span class="ouvrir">Ouvrir la page</span>
+          <span class="ouvrir">Voir mes coordonnées</span>
         </a>
       </div>
+    </div>
+  </section>
+
+  <section class="contact-accueil" id="contact">
+    <div class="wrap">
+      <h2>Me contacter</h2>
+      <p class="intro-section">Pour un stage, un projet ou simplement échanger, écris-moi.</p>
+      <div class="contact-grille">
+        <div>
+          <h3>Mail</h3>
+          <a href="mailto:prenom.nom@exemple.fr">prenom.nom@exemple.fr</a>
+        </div>
+        <div>
+          <h3>Téléphone</h3>
+          <a href="tel:+33600000000">06 00 00 00 00</a>
+        </div>
+        <div>
+          <h3>LinkedIn</h3>
+          <a href="https://www.linkedin.com/in/ton-profil" target="_blank" rel="noopener">Mon profil LinkedIn</a>
+        </div>
+      </div>
+      <a class="btn" href="cv.pdf" target="_blank" rel="noopener">Télécharger mon CV</a>
     </div>
   </section>
 
@@ -93,10 +116,8 @@
 <footer>
   <div class="wrap">
     <span>© <span id="annee"></span> Prénom Nom</span>
-    <a href="contact.html">Me contacter</a>
+    <a href="#contact">Me contacter</a>
   </div>
 </footer>
-
-<script>document.getElementById("annee").textContent = new Date().getFullYear();</script>
 </body>
 </html>
