@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parcours – Prénom Nom</title>
+  <meta name="description" content="Formations, stages et expériences de Prénom Nom.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="p-parcours">
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="nom" href="index.html">Prénom Nom</a>
+    <nav aria-label="Pages">
+      <ul>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="parcours.html" aria-current="page">Parcours</a></li>
+        <li><a href="competences.html">Compétences</a></li>
+        <li><a href="engagement.html">Engagement</a></li>
+        <li><a href="activites.html">Activités</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="entete-page">
+  <div class="wrap">
+    <h1>Parcours</h1>
+    <p>Stages, emplois et formations, de la plus récente à la plus ancienne.</p>
+  </div>
+</section>
+
+<main class="contenu" id="contenu">
+  <div class="wrap">
+
+    <div class="exp">
+      <div class="logo">
+        <!-- Logo : <img src="logo1.png" alt="Logo de la structure"> -->
+        Logo
+      </div>
+      <div>
+        <div class="entete">
+          <h3>[Intitulé du stage ou du poste]</h3>
+          <span class="dates">[Juin à juillet 2026]</span>
+        </div>
+        <p class="lieu">[Structure, ville]</p>
+        <ul>
+          <li>[Mission principale, avec un résultat chiffré si possible]</li>
+          <li>[Deuxième mission ou outil utilisé]</li>
+          <li>[Ce que tu en as retiré]</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp">
+      <div class="logo">Logo</div>
+      <div>
+        <div class="entete">
+          <h3>[Intitulé du stage ou du poste]</h3>
+          <span class="dates">[Mai à juin 2025]</span>
+        </div>
+        <p class="lieu">[Structure, ville]</p>
+        <ul>
+          <li>[Ce que tu as fait au quotidien]</li>
+          <li>[Ce que tu as découvert du fonctionnement de la structure]</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp">
+      <div class="logo">Logo</div>
+      <div>
+        <div class="entete">
+          <h3>[Formation actuelle]</h3>
+          <span class="dates">[2025 à aujourd'hui]</span>
+        </div>
+        <p class="lieu">[Établissement, ville]</p>
+        <p>[Une phrase sur la spécialité ou les enseignements qui comptent pour toi.]</p>
+      </div>
+    </div>
+
+    <nav class="suite" aria-label="Pages voisines">
+      <a href="projets.html">Page précédente : Projets</a>
+      <a href="competences.html">Page suivante : Compétences</a>
+    </nav>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="annee"></span> Prénom Nom</span>
+    <a href="contact.html">Me contacter</a>
+  </div>
+</footer>
+
+<script>document.getElementById("annee").textContent = new Date().getFullYear();</script>
+</body>
+</html>

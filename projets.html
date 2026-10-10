@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projets – Prénom Nom</title>
+  <meta name="description" content="Les projets réalisés par Prénom Nom.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="p-projets">
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="nom" href="index.html">Prénom Nom</a>
+    <nav aria-label="Pages">
+      <ul>
+        <li><a href="projets.html" aria-current="page">Projets</a></li>
+        <li><a href="parcours.html">Parcours</a></li>
+        <li><a href="competences.html">Compétences</a></li>
+        <li><a href="engagement.html">Engagement</a></li>
+        <li><a href="activites.html">Activités</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="entete-page">
+  <div class="wrap">
+    <h1>Projets</h1>
+    <p>Les projets que j'ai menés en cours, en stage ou de mon côté.</p>
+  </div>
+</section>
+
+<main class="contenu" id="contenu">
+  <div class="wrap">
+
+    <article class="projet">
+      <div class="capture">
+        <!-- Remplace par : <img src="projet1.png" alt="Capture du projet 1"> -->
+        <div class="vide">Capture d'écran ou photo du projet</div>
+      </div>
+      <div>
+        <h3>[Titre du projet 1]</h3>
+        <p class="cadre">[Projet de groupe, 4 personnes, 3 mois]</p>
+        <p>Décris le problème de départ, ce que tu as réalisé personnellement et le résultat, avec des chiffres quand tu en as (durée, performances, nombre d'utilisateurs).</p>
+        <p class="tech"><strong>Outils :</strong> [outil 1], [outil 2], [outil 3]</p>
+        <p><a href="#">Voir le projet</a></p>
+      </div>
+    </article>
+
+    <article class="projet">
+      <div class="capture">
+        <div class="vide">Capture d'écran ou photo du projet</div>
+      </div>
+      <div>
+        <h3>[Titre du projet 2]</h3>
+        <p class="cadre">[Projet individuel, 3 semaines]</p>
+        <p>Le contexte, ta démarche, ce que le projet t'a appris. Une phrase honnête sur une difficulté rencontrée rend le texte plus crédible.</p>
+        <p class="tech"><strong>Outils :</strong> [outil 1], [outil 2]</p>
+        <p><a href="#">Voir le projet</a></p>
+      </div>
+    </article>
+
+    <article class="projet">
+      <div class="capture">
+        <div class="vide">Capture d'écran ou photo du projet</div>
+      </div>
+      <div>
+        <h3>[Titre du projet 3]</h3>
+        <p class="cadre">[Projet de fin d'année, binôme]</p>
+        <p>Ce qu'il fallait faire, comment vous vous êtes réparti le travail, ce que vous avez livré.</p>
+        <p class="tech"><strong>Outils :</strong> [outil 1], [outil 2], [outil 3]</p>
+      </div>
+    </article>
+
+    <nav class="suite" aria-label="Pages voisines">
+      <a href="index.html">Retour à l'accueil</a>
+      <a href="parcours.html">Page suivante : Parcours</a>
+    </nav>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="annee"></span> Prénom Nom</span>
+    <a href="contact.html">Me contacter</a>
+  </div>
+</footer>
+
+<script>document.getElementById("annee").textContent = new Date().getFullYear();</script>
+</body>
+</html>
