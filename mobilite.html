@@ -8,8 +8,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
   <link rel="stylesheet" href="style.css">
   <script src="site.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script>
+  <script src="voyages.js" defer></script>
 </head>
 <body class="p-mobilite">
 <a class="skip" href="#contenu">Aller au contenu</a>
@@ -80,23 +83,11 @@
     </section>
 
     <section class="panneau" id="voyage" role="tabpanel" aria-labelledby="onglet-voyage">
-      <h2>Voyage</h2>
-      <p class="chapo">Une carte avec les différentes villes que j'ai visitées.</p>
-      <div class="deux">
-        <div>
-          <h3>Le contexte</h3>
-          <p>[Quand, où, avec qui, pendant combien de temps.]</p>
-        </div>
-        <div>
-          <h3>Ce que j'ai fait</h3>
-          <p>[Tes activités concrètes, les personnes rencontrées, les difficultés surmontées.]</p>
-        </div>
-        <div>
-          <h3>Ce que j'en retiens</h3>
-          <p>[Ce que cette expérience t'a appris sur toi, sur ta façon de travailler et sur d'autres cultures.]</p>
-        </div>
-      </div>
-    </section>
+    <h2>Voyage</h2>
+    <p class="chapo">Une carte avec les différentes villes que j'ai visitées.</p>
+    <div id="carte-voyage" class="carte" role="region" aria-label="Carte des lieux visités"></div>
+    <ul class="villes" id="liste-voyage" aria-label="Liste des lieux visités"></ul>
+  </section>
 
   </div>
 
