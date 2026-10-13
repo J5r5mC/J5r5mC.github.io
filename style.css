@@ -106,7 +106,7 @@ p { margin: 0 0 14px; }
 .t-carriere { --c: var(--rose); }
 .t-contact { --c: var(--encre); }
 
-.contact-accueil { padding: 72px 0 88px; background: var(--surface); }
+.contact-accueil { padding: 40px 0 32px; background: var(--surface); }
 .contact-grille { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 28px; margin-bottom: 32px; }
 .contact-grille h3 { font-size: 1rem; color: var(--gris); font-weight: 500; margin-bottom: 4px; }
 .contact-grille a, .contact-grille p { font-size: 1.15rem; overflow-wrap: anywhere; margin: 0; }
