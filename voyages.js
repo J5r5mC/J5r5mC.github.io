@@ -14,10 +14,10 @@
    Les lieux ci-dessous sont des EXEMPLES : remplace-les par les tiens.
    ========================================================= */
 var VOYAGES = [
-  { ville: "Toulouse",  region: "Occitanie",  pays: "France", lat: 43.6047, lon: 1.4442,   note: "Exemple : ma ville d'études" },
-  { ville: "Barcelone", region: "Catalogne",  pays: "Espagne", lat: 41.3874, lon: 2.1686,  note: "Exemple : week-end en 2024" },
-  { ville: "Rome",      region: "Latium",     pays: "Italie", lat: 41.9028, lon: 12.4964,  note: "" },
-  { ville: "Montréal",  region: "Québec",     pays: "Canada", lat: 45.5017, lon: -73.5673, note: "" }
+  { ville: "Londres", pays: "Angleterre", lat: 51.3026, lon: 0.0739 },
+  { region: "Asturies", pays: "Espagne", lat: 43.2200, lon: 5.5000 },
+  { ville: "Naples", pays: "Italie", lat: 40.5000, lon: 14.1500 },
+  { ville: "Florence", pays: "Italie", lat: 43.7695, lon: 11.2558 }
 ];
 
 
