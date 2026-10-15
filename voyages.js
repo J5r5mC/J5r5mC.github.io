@@ -16,9 +16,9 @@
 var VOYAGES = [
   { ville: "Londres", pays: "Angleterre", lat: 51.5050, lon: -0.1287 },
   { region: "Asturies", pays: "Espagne", lat: 43.3633, lon: -5.848760 },
-  { ville: "Naples", pays: "Italie", lat: 40.5000, lon: 14.1500 },
+  { ville: "Naples", pays: "Italie", lat: 40.8489, lon: 14.262309 },
   { ville: "Florence", pays: "Italie", lat: 43.7695, lon: 11.2558 },
-  { ville: "Budapest", pays: "Hongrie", lat: 47.2954, lon: 19.0227}
+  { ville: "Budapest", pays: "Hongrie", lat: 47.4933, lon: 19.0542}
 ];
 
 
