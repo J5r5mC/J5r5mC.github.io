@@ -14,10 +14,11 @@
    Les lieux ci-dessous sont des EXEMPLES : remplace-les par les tiens.
    ========================================================= */
 var VOYAGES = [
-  { ville: "Londres", pays: "Angleterre", lat: 51.3026, lon: 0.0739 },
+  { ville: "Londres", pays: "Angleterre", lat: 51.5050, lon: -0.1287 },
   { region: "Asturies", pays: "Espagne", lat: 43.2200, lon: 5.5000 },
   { ville: "Naples", pays: "Italie", lat: 40.5000, lon: 14.1500 },
-  { ville: "Florence", pays: "Italie", lat: 43.7695, lon: 11.2558 }
+  { ville: "Florence", pays: "Italie", lat: 43.7695, lon: 11.2558 },
+  { ville: "Budapest", pays: "Hongrie", lat: 47.2954, lon: 19.0227}
 ];
 
 
