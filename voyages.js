@@ -59,17 +59,23 @@ var VOYAGES = [
     popupAnchor: [0, -32]
   });
 
+  // Éléments renseignés d'un lieu : ville, région, pays (ceux qui sont vides sont ignorés)
+  function parties(v) {
+    return [v.ville, v.region, v.pays].filter(Boolean);
+  }
+
   // Contenu de l'infobulle (survol) et de la fenêtre (clic)
+  // Titre = premier élément renseigné, le reste s'affiche en dessous
   function contenu(v, avecNote) {
+    var p = parties(v);
     var bloc = document.createElement("div");
     bloc.className = "lieu";
     var nom = document.createElement("strong");
-    nom.textContent = v.ville;
+    nom.textContent = p[0] || "";
     bloc.appendChild(nom);
-    var detail = [v.region, v.pays].filter(Boolean).join(", ");
-    if (detail) {
+    if (p.length > 1) {
       var d = document.createElement("span");
-      d.textContent = detail;
+      d.textContent = p.slice(1).join(", ");
       bloc.appendChild(d);
     }
     if (avecNote && v.note) {
@@ -92,7 +98,8 @@ var VOYAGES = [
     marqueur.bindTooltip(contenu(v, false), { direction: "top", className: "etiquette" });
     marqueur.bindPopup(contenu(v, true), { closeButton: true });
 
-    var libelle = [v.ville, v.pays].filter(Boolean).join(", ");
+    var p = parties(v);
+    var libelle = p.length > 1 ? p[0] + ", " + p[p.length - 1] : (p[0] || "");
     var el = marqueur.getElement();
     if (el) {
       el.setAttribute("aria-label", libelle);
