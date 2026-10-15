@@ -18,7 +18,8 @@ var VOYAGES = [
   { region: "Asturies", pays: "Espagne", lat: 43.3633, lon: -5.848760 },
   { ville: "Naples", pays: "Italie", lat: 40.8489, lon: 14.262309 },
   { ville: "Florence", pays: "Italie", lat: 43.7695, lon: 11.2558 },
-  { ville: "Budapest", pays: "Hongrie", lat: 47.4933, lon: 19.0542}
+  { ville: "Budapest", pays: "Hongrie", lat: 47.4933, lon: 19.0542},
+  { ville: "Prague", pays: "Tchéquie", lat: 50.074604, lon: 14.437187 }
 ];
 
 
