@@ -20,7 +20,8 @@ var VOYAGES = [
   { ville: "Florence", pays: "Italie", lat: 43.7695, lon: 11.2558 },
   { ville: "Budapest", pays: "Hongrie", lat: 47.4933, lon: 19.0542},
   { ville: "Prague", pays: "Tchéquie", lat: 50.074604, lon: 14.437187 },
-  { ville: "Istanbul", pays: "Turquie", lat: 41.011890, lon:  28.968144}
+  { ville: "Istanbul", pays: "Turquie", lat: 41.011890, lon:  28.968144},
+  { ville: "Dubaï", pays: "Émirats arabes unis", lat: 25.200009, lon: 55.300078 }
 ];
 
 
