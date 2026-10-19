@@ -21,7 +21,16 @@ var VOYAGES = [
   { ville: "Budapest", pays: "Hongrie", lat: 47.4933, lon: 19.0542},
   { ville: "Prague", pays: "Tchéquie", lat: 50.074604, lon: 14.437187 },
   { ville: "Istanbul", pays: "Turquie", lat: 41.011890, lon:  28.968144},
-  { ville: "Dubaï", pays: "Émirats arabes unis", lat: 25.200009, lon: 55.300078 }
+  { ville: "Dubaï", pays: "Émirats arabes unis", lat: 25.200009, lon: 55.300078 },
+  { ville: "New York", pays: "États-Unis", lat: 40.677319, lon: -73.955300},
+  { region: "Ladakh", pays: "Inde", lat: 34.150531, lon: 77.564416},
+  { ville: "Delhi", pays: "Inde", lat: 28.665679, lon: 77.199624},
+  { ville: "Marrakech", pays: "Maroc", lat: 31.634595, lon: -7.993438},
+  { ville: "Agadir", pays: "Maroc", lat: 30.423274, lon: -9.581526},
+  { ville: "Taroudant", pays: "Maroc", lat: 30.472262, lon: -8.877501},
+  { ville: "Essaouira", pays: "Maroc", lat: 31.510083, lon: -9.760460},
+  { ville: "Lisbonne", pays: "Portugal", lat: 38.726643, lon: -9.139141},
+  { pays: "Seychelles", lat: -4.674400, lon: 55.469314}
 ];
 
 
