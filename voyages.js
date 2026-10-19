@@ -1,18 +1,6 @@
-/* =========================================================
+/* ==================
    Carte des voyages
-   ---------------------------------------------------------
-   POUR AJOUTER UN LIEU : copie une ligne dans la liste
-   ci-dessous, sépare-la par une virgule et change les valeurs.
-
-   - ville  : nom affiché en gras
-   - region : région, état ou département (peut rester "")
-   - pays   : pays
-   - lat    : latitude  (nombre avec un point, ex. 43.6047)
-   - lon    : longitude (nombre avec un point, ex. 1.4442)
-   - note   : texte facultatif affiché quand on clique (ex. "Été 2023")
-
-   Les lieux ci-dessous sont des EXEMPLES : remplace-les par les tiens.
-   ========================================================= */
+   ================== */
 var VOYAGES = [
   { ville: "Londres", pays: "Angleterre", lat: 51.5050, lon: -0.1287 },
   { region: "Asturies", pays: "Espagne", lat: 43.3633, lon: -5.848760 },
@@ -34,9 +22,9 @@ var VOYAGES = [
 ];
 
 
-/* =========================================================
-   Code de la carte : normalement, rien à modifier ci-dessous
-   ========================================================= */
+/* =================
+   Code de la carte
+   ================= */
 (function () {
   var conteneur = document.getElementById("carte-voyage");
   if (!conteneur || typeof L === "undefined") return;
