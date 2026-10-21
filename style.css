@@ -209,8 +209,8 @@ footer a { color: #fff; }
   content: "";
   position: absolute;
   left: 6px;
-  top: 12px;
-  bottom: -12px;
+  top: 24px;
+  bottom: -24px;
   width: 4px;
   border-radius: 2px;
   background: color-mix(in srgb, var(--couleur) 45%, transparent);
@@ -222,7 +222,7 @@ footer a { color: #fff; }
   content: "";
   position: absolute;
   left: 0;
-  top: 4px;
+  top: 16px;
   width: 16px;
   height: 16px;
   border-radius: 50%;
