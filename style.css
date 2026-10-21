@@ -195,3 +195,41 @@ footer a { color: #fff; }
   .exp { grid-template-columns: minmax(0, 1fr); gap: 12px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* ---------- Frise chronologique (onglet Stages) ---------- */
+#stages .exp {
+  position: relative;
+  padding: 0 0 44px 48px;          /* place pour la barre et le point, à gauche */
+  border-top: 0;
+}
+#stages .exp:last-of-type { padding-bottom: 0; }
+
+/* la barre verticale qui relie un stage au suivant */
+#stages .exp::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 12px;
+  bottom: -12px;
+  width: 4px;
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--couleur) 45%, transparent);
+}
+#stages .exp:last-of-type::before { display: none; }
+
+/* le point à côté de chaque stage */
+#stages .exp::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--couleur);
+  box-shadow: 0 0 0 4px var(--teinte);
+}
+
+@media (max-width: 520px) {
+  #stages .exp { padding-left: 34px; }
+}
