@@ -233,3 +233,41 @@ footer a { color: #fff; }
 @media (max-width: 520px) {
   #stages .exp { padding-left: 34px; }
 }
+
+
+/* =====================================================
+   Nouvelle palette : bandeaux pastel en dégradé, fonds blancs
+   ===================================================== */
+:root {
+  --bleu-pastel:   #bccbf7;
+  --violet-pastel: #d4cbf6;
+  --vert-pastel:   #b7e4d2;
+  --jaune-pastel:  #fbe7a6;
+  --rose-pastel:   #f7c1d6;
+}
+
+/* Couleur du bandeau de chaque page */
+.p-ingenierie { --bandeau: var(--bleu-pastel); }
+.p-mobilite   { --bandeau: var(--violet-pastel); }
+.p-durable    { --bandeau: var(--vert-pastel); }
+.p-sport      { --bandeau: var(--jaune-pastel); }
+.p-carriere   { --bandeau: var(--rose-pastel); }
+
+/* Fond blanc sous le bandeau, texte du bandeau en couleur sombre */
+.p-ingenierie, .p-mobilite, .p-durable, .p-sport, .p-carriere {
+  --teinte: #ffffff;
+  --sur: var(--encre);
+}
+
+/* Bandeau des pages : couleur pastel à gauche, blanc à droite */
+.entete-page { background: linear-gradient(90deg, var(--bandeau) 0%, #ffffff 100%); }
+
+/* Page d'accueil */
+.hero { background: linear-gradient(90deg, var(--bleu-pastel) 0%, #ffffff 100%); color: var(--encre); }
+.hero .detail { color: #3b4350; }
+.hero .btn { background: var(--bleu); border-color: var(--bleu); color: #fff; }
+.hero .btn:hover { background: var(--accent-fonce); border-color: var(--accent-fonce); color: #fff; }
+.hero .btn.simple { background: transparent; border-color: var(--encre); color: var(--encre); }
+.hero .btn.simple:hover { background: var(--encre); border-color: var(--encre); color: #fff; }
+.explorer { background: #ffffff; }
+.contact-accueil { border-top: 1px solid var(--trait); }
