@@ -271,3 +271,21 @@ footer a { color: #fff; }
 .hero .btn.simple:hover { background: var(--encre); border-color: var(--encre); color: #fff; }
 .explorer { background: #ffffff; }
 .contact-accueil { border-top: 1px solid var(--trait); }
+
+
+/* ---------- Tuiles de l'accueil : pastel en dégradé, comme les bandeaux ---------- */
+:root { --gris-pastel: #d9dee8; }
+
+.tuile {
+  background: linear-gradient(90deg, var(--c) 0%, #ffffff 100%);
+  color: var(--encre);
+  border: 1px solid var(--trait);
+}
+.tuile:hover { color: var(--encre); box-shadow: 6px 6px 0 var(--vif); }
+
+.t-ingenierie { --c: var(--bleu-pastel);   --vif: var(--bleu); }
+.t-mobilite   { --c: var(--violet-pastel); --vif: var(--violet); }
+.t-durable    { --c: var(--vert-pastel);   --vif: var(--vert); }
+.t-sport      { --c: var(--jaune-pastel);  --vif: #d9a514; }
+.t-carriere   { --c: var(--rose-pastel);   --vif: var(--rose); }
+.t-contact    { --c: var(--gris-pastel);   --vif: var(--encre); }
