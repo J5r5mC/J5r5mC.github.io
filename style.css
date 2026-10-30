@@ -330,8 +330,7 @@ html[lang="en"] .langue .l-en { background: var(--encre); color: #fff; font-weig
 .profil a { font-weight: 600; font-size: 1.05rem; }
 .profil .metier { color: var(--gris); font-size: .95rem; }
 
-/* ---- Frise de l'onglet Formation (sans logos) ---- */
-/* ---- Frise de l'onglet Formation (sans logos) ---- */
+/* ---- Frise de l'onglet Formation ---- */
 #formation .exp { display: block; position: relative; padding: 0 0 44px 48px; border-top: 0; }
 #formation .exp:last-of-type { padding-bottom: 0; }
 #formation .exp::before { content: ""; position: absolute; left: 6px; top: 11px; bottom: -11px; width: 4px; border-radius: 2px; background: color-mix(in srgb, var(--couleur) 45%, transparent); }
