@@ -43,7 +43,7 @@
 
     <div class="onglets" role="tablist" aria-label="Développement de carrière" data-en-aria-label="Career development">
       <button type="button" role="tab" id="onglet-stages" aria-controls="stages" aria-selected="true"><span lang="fr">Stages</span><span lang="en">Internships</span></button>
-      <button type="button" role="tab" id="onglet-pep" aria-controls="pep" aria-selected="false" tabindex="-1"><span lang="fr">PEP</span><span lang="en">PEP</span></button>
+      <button type="button" role="tab" id="onglet-formation" aria-controls="formation" aria-selected="false" tabindex="-1"><span lang="fr">Formation</span><span lang="en">Education</span></button>
       <button type="button" role="tab" id="onglet-cv" aria-controls="cv" aria-selected="false" tabindex="-1"><span lang="fr">CV et réseau</span><span lang="en">CV &amp; network</span></button>
     </div>
 
@@ -109,21 +109,49 @@
       </div>
     </section>
 
-    <section class="panneau" id="pep" role="tabpanel" aria-labelledby="onglet-pep">
-      <h2>PEP</h2>
-      <p class="chapo"><span lang="fr">[Présente en une phrase le métier ou le secteur que tu vises.]</span><span lang="en">[Present in one sentence the job or sector you are aiming for.]</span></p>
-      <div class="deux">
-        <div>
-          <h3><span lang="fr">Mon projet professionnel</span><span lang="en">My career plan</span></h3>
-          <p><span lang="fr">[Les métiers et les secteurs qui t'attirent, et pourquoi.]</span><span lang="en">[The jobs and sectors that appeal to you, and why.]</span></p>
+    <section class="panneau" id="formation" role="tabpanel" aria-labelledby="onglet-formation">
+      <h2><span lang="fr">Formation</span><span lang="en">Education</span></h2>
+      <p class="chapo"><span lang="fr">Les établissements où j'ai étudié, du plus récent au plus ancien.</span><span lang="en">The schools where I have studied, from the most recent to the oldest.</span></p>
+
+      <div class="exp">
+        <div class="logo">
+          <!-- <img src="Documents/logo-enseeiht.png" alt="Logo de l'ENSEEIHT" data-en-alt="ENSEEIHT logo"> -->
         </div>
         <div>
-          <h3><span lang="fr">Ce que j'ai déjà fait pour avancer</span><span lang="en">What I have already done to move forward</span></h3>
-          <p><span lang="fr">[Rencontres avec des professionnels, forums, stages, lectures, projets qui ont précisé ton choix.]</span><span lang="en">[Meetings with professionals, career fairs, internships, reading, projects that sharpened your choice.]</span></p>
+          <div class="entete">
+            <h3>ENSEEIHT</h3>
+            <span class="dates"><span lang="fr">[année] - aujourd'hui</span><span lang="en">[year] – present</span></span>
+          </div>
+          <p class="lieu">Toulouse</p>
+          <p><span lang="fr">Cycle ingénieur, sciences du numérique, filière MODIA (Modélisation et Intelligence Artificielle).</span><span lang="en">Engineering degree, digital sciences, MODIA track (Modelling and Artificial Intelligence).</span></p>
+        </div>
+      </div>
+
+      <div class="exp">
+        <div class="logo">
+          <!-- <img src="Documents/logo-prepa.png" alt="Logo de l'établissement"> -->
         </div>
         <div>
-          <h3><span lang="fr">Mes prochaines étapes</span><span lang="en">My next steps</span></h3>
-          <p><span lang="fr">[Ce que tu veux faire dans les mois qui viennent : stage, spécialisation, mobilité, formation complémentaire.]</span><span lang="en">[What you want to do in the coming months: internship, specialisation, mobility, further training.]</span></p>
+          <div class="entete">
+            <h3><span lang="fr">[Classe préparatoire ou licence]</span><span lang="en">[Preparatory classes or bachelor's degree]</span></h3>
+            <span class="dates"><span lang="fr">[année] - [année]</span><span lang="en">[year] – [year]</span></span>
+          </div>
+          <p class="lieu">[Ville]</p>
+          <p><span lang="fr">[Filière, option, ce que tu y as appris.]</span><span lang="en">[Track, option, what you learned there.]</span></p>
+        </div>
+      </div>
+
+      <div class="exp">
+        <div class="logo">
+          <!-- <img src="Documents/logo-lycee.png" alt="Logo du lycée"> -->
+        </div>
+        <div>
+          <div class="entete">
+            <h3><span lang="fr">[Lycée]</span><span lang="en">[High school]</span></h3>
+            <span class="dates"><span lang="fr">[année] - [année]</span><span lang="en">[year] – [year]</span></span>
+          </div>
+          <p class="lieu">[Ville]</p>
+          <p><span lang="fr">[Baccalauréat, spécialités, mention.]</span><span lang="en">[Baccalauréat, specialisation subjects, honours.]</span></p>
         </div>
       </div>
     </section>
