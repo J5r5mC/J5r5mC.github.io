@@ -314,3 +314,10 @@ html[lang="en"] [lang="fr"] { display: none !important; }
 html[lang="fr"] .langue .l-fr,
 html[lang="en"] .langue .l-en { background: var(--encre); color: #fff; font-weight: 600; }
 .langue:hover { border-color: var(--encre); }
+
+/* 5 tuiles : 3 en haut, 2 plus larges en dessous */
+@media (min-width: 900px) {
+  .tuiles { grid-template-columns: repeat(6, 1fr); }
+  .tuile { grid-column: span 2; }
+  .tuile:nth-child(n+4) { grid-column: span 3; }
+}
