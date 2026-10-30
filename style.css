@@ -321,3 +321,11 @@ html[lang="en"] .langue .l-en { background: var(--encre); color: #fff; font-weig
   .tuile { grid-column: span 2; }
   .tuile:nth-child(n+4) { grid-column: span 3; }
 }
+
+/* ---- Profils qui m'inspirent (page Carrière) ---- */
+.inspirations { margin-top: 48px; }
+.inspirations h3 { margin-bottom: 16px; padding-left: 14px; border-left: 6px solid var(--couleur); }
+.profils { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
+.profil { display: flex; flex-direction: column; gap: 4px; padding: 16px 18px; border: 1px solid var(--trait); border-left: 6px solid var(--couleur); border-radius: 8px; background: linear-gradient(90deg, var(--teinte) 0%, #fff 100%); }
+.profil a { font-weight: 600; font-size: 1.05rem; }
+.profil .metier { color: var(--gris); font-size: .95rem; }
