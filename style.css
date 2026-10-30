@@ -332,6 +332,7 @@ html[lang="en"] .langue .l-en { background: var(--encre); color: #fff; font-weig
 
 /* ---- Frise de l'onglet Formation (même principe que Stages) ---- */
 #formation .exp { position: relative; padding: 0 0 44px 48px; border-top: 0; }
+#formation .exp { display: block; }
 #formation .exp:last-of-type { padding-bottom: 0; }
 #formation .exp::before { content: ""; position: absolute; left: 6px; top: 24px; bottom: -24px; width: 4px; border-radius: 2px; background: color-mix(in srgb, var(--couleur) 45%, transparent); }
 #formation .exp:last-of-type::before { display: none; }
