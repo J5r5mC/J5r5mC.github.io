@@ -1,0 +1,77 @@
+
+/* ---------- Carte des voyages (onglet Voyage de la page Mobilité) ---------- */
+.carte {
+  height: 480px;
+  border-radius: 6px;
+  border: 1px solid var(--trait);
+  box-shadow: 8px 8px 0 var(--couleur);
+  background: #dfe6ee;
+  z-index: 0;                      /* garde la carte sous la barre du haut */
+}
+.carte.leaflet-container { font-family: inherit; }
+.carte a { color: var(--texte, var(--accent)); }
+
+/* Punaise : une goutte colorée dont la pointe marque le lieu */
+.epingle { background: none; border: 0; }
+.epingle span {
+  position: relative;
+  display: block;
+  width: 26px;
+  height: 26px;
+  box-sizing: border-box;
+  border: 3px solid #fff;
+  border-radius: 50% 50% 50% 0;
+  background: var(--couleur);
+  transform: rotate(-45deg);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .35);
+}
+.epingle span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  margin: -4px 0 0 -4px;
+  border-radius: 50%;
+  background: #fff;
+}
+.epingle:hover span,
+.epingle:focus-visible span { background: var(--encre); }
+.leaflet-marker-icon.epingle:focus-visible { outline: 3px solid var(--encre); outline-offset: 4px; border-radius: 4px; }
+
+/* Infobulle au survol et fenêtre au clic */
+.leaflet-tooltip.etiquette {
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--encre);
+  color: #fff;
+  font-family: inherit;
+  line-height: 1.35;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .25);
+}
+.leaflet-tooltip-top.etiquette::before { border-top-color: var(--encre); }
+.leaflet-popup-content-wrapper { border-radius: 6px; font-family: inherit; }
+.leaflet-popup-content { margin: 12px 18px; line-height: 1.4; }
+.lieu strong { display: block; font-size: 1.02rem; }
+.lieu span { display: block; font-size: .92rem; opacity: .8; }
+.lieu .note { margin-top: 6px; font-size: .92rem; }
+
+/* Liste des lieux sous la carte */
+.villes { list-style: none; margin: 28px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.villes button {
+  font: inherit;
+  font-size: .95rem;
+  cursor: pointer;
+  padding: 6px 14px;
+  border: 1px solid var(--trait);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--encre);
+}
+.villes button:hover { border-color: var(--couleur); background: color-mix(in srgb, var(--couleur) 12%, #fff); }
+
+@media (max-width: 820px) {
+  .carte { height: 360px; box-shadow: 5px 5px 0 var(--couleur); }
+}

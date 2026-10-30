@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-en="International mobility – Jérémy Claux">Mobilité internationale – Jérémy Claux</title>
+  <meta name="description" content="Langues, projet de mobilité et Voyage de Jérémy Claux." data-en="Jérémy Claux's languages, mobility plan and travels.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <script src="langue.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="carte.css">
+  <script src="site.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script>
+  <script src="voyages.js" defer></script>
+</head>
+<body class="p-mobilite">
+<a class="skip" href="#contenu"><span lang="fr">Aller au contenu</span><span lang="en">Skip to content</span></a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="nom" href="index.html">Jérémy Claux</a>
+    <nav aria-label="Pages" data-en-aria-label="Pages">
+      <ul>
+        <li><a href="ingenierie.html"><span lang="fr">Projets</span><span lang="en">Projects</span></a></li>
+        <li><a href="mobilite.html" aria-current="page"><span lang="fr">International</span><span lang="en">International</span></a></li>
+        <li><a href="engagement.html"><span lang="fr">Environnement et citoyen</span><span lang="en">Environment &amp; citizenship</span></a></li>
+        <li><a href="sport.html"><span lang="fr">Sport</span><span lang="en">Sport</span></a></li>
+        <li><a href="carriere.html"><span lang="fr">Carrière</span><span lang="en">Career</span></a></li>
+      </ul>
+    </nav>
+    <button type="button" class="langue" aria-label="Switch to English"><span class="l-fr">FR</span><span class="l-en">EN</span></button>
+  </div>
+</header>
+
+<section class="entete-page">
+  <div class="wrap">
+    <h1><span lang="fr">Mobilité internationale</span><span lang="en">International mobility</span></h1>
+    <p><span lang="fr">Mes langues, mes expériences à l'international et mon projet de départ.</span><span lang="en">My languages, my international experiences and my plan to go abroad.</span></p>
+  </div>
+</section>
+
+<main class="contenu" id="contenu">
+  <div class="wrap">
+
+    <div class="onglets" role="tablist" aria-label="Mobilité internationale" data-en-aria-label="International mobility">
+      <button type="button" role="tab" id="onglet-langues" aria-controls="langues" aria-selected="false" tabindex="-1"><span lang="fr">Langues</span><span lang="en">Languages</span></button>
+      <button type="button" role="tab" id="onglet-mobilite" aria-controls="projet-mobilite" aria-selected="false" tabindex="-1"><span lang="fr">Projet de mobilité</span><span lang="en">Mobility plan</span></button>
+      <button type="button" role="tab" id="onglet-voyage" aria-controls="voyage" aria-selected="true"><span lang="fr">Voyage</span><span lang="en">Travel</span></button>
+    </div>
+
+    <section class="panneau" id="langues" role="tabpanel" aria-labelledby="onglet-langues">
+      <h2><span lang="fr">Langues</span><span lang="en">Languages</span></h2>
+      <div class="deux">
+        <div>
+          <h3><span lang="fr">Anglais</span><span lang="en">English</span></h3>
+          <p><span lang="fr">Niveau B2 - Score 4.5/6 au TOEFL (équivaut à 90 sur 120 avec l'ancienne version).</span><span lang="en">Level B2 – TOEFL score of 4.5/6 (equivalent to 90 out of 120 on the old scale).</span> <a href="Documents/Score_TOEFL.pdf" target="_blank" rel="noopener"><span lang="fr">Ouvrir le certificat</span><span lang="en">Open the certificate</span></a></p>
+        </div>
+        <div>
+          <h3><span lang="fr">Italien</span><span lang="en">Italian</span></h3>
+          <p><span lang="fr">Niveau B1</span><span lang="en">Level B1</span></p>
+        </div>
+        <div>
+          <h3><span lang="fr">Chinois</span><span lang="en">Chinese</span></h3>
+          <p><span lang="fr">Débutant</span><span lang="en">Beginner</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panneau" id="projet-mobilite" role="tabpanel" aria-labelledby="onglet-mobilite">
+      <h2><span lang="fr">Projet de mobilité</span><span lang="en">Mobility plan</span></h2>
+      <p class="chapo"><span lang="fr">Mon cursus étant trop dense, je ne peux malheureusement pas postuler pour un semestre à l'étranger. Je souhaiterais en revanche partir à l'étranger pour y réaliser un stage.</span><span lang="en">My curriculum is too dense for me to apply for a semester abroad, unfortunately. I would, however, like to go abroad to do an internship.</span></p>
+      <div class="deux">
+        <div>
+          <h3><span lang="fr">Destinations visées</span><span lang="en">Target destinations</span></h3>
+          <p><span lang="fr">Je n'ai pas d'avis arrêté sur le pays où je souhaiterais partir. Cependant, aller dans un pays anglophone serait une aubaine pour développer mon niveau d'anglais. Je suis également attiré par les pays qui peuvent offrir un choc culturel comme la Chine ou l'Inde.</span><span lang="en">I have no fixed opinion on which country I would like to go to. However, going to an English-speaking country would be a great opportunity to improve my English. I am also drawn to countries that can offer a culture shock, like China or India.</span></p>
+        </div>
+        <div>
+          <h3><span lang="fr">Pourquoi partir</span><span lang="en">Why go abroad</span></h3>
+          <p><span lang="fr">C'est une super occasion pour améliorer son niveau d'anglais voire d'une 2ème langue ! La mobilité internationale est également l'occasion de s'immerger dans une nouvelle culture, un nouveau mode de vie.</span><span lang="en">It is a great opportunity to improve your English, or even a second foreign language! International mobility is also a chance to immerse yourself in a new culture and a new way of life.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panneau" id="voyage" role="tabpanel" aria-labelledby="onglet-voyage">
+      <h2><span lang="fr">Voyage</span><span lang="en">Travel</span></h2>
+      <p class="chapo"><span lang="fr">Une carte avec les différentes villes que j'ai visitées à l'étranger.</span><span lang="en">A map of the different places I have visited abroad.</span></p>
+      <div id="carte-voyage" class="carte" role="region" aria-label="Carte des lieux visités" data-en-aria-label="Map of the places visited"></div>
+      <ul class="villes" id="liste-voyage" aria-label="Liste des lieux visités" data-en-aria-label="List of the places visited"></ul>
+    </section>
+
+  </div>
+</main>
+
+<section class="contact-accueil" id="contact">
+  <div class="wrap">
+    <h2><span lang="fr">Me contacter</span><span lang="en">Contact me</span></h2>
+    <p class="intro-section"><span lang="fr">Pour un stage, un projet ou simplement échanger, écris-moi.</span><span lang="en">For an internship, a project, or just to chat, drop me a line.</span></p>
+    <div class="contact-grille">
+      <div>
+        <h3><span lang="fr">Mail</span><span lang="en">Email</span></h3>
+        <a href="mailto:jeremy.claux@hotmail.fr">jeremy.claux@hotmail.fr</a>
+      </div>
+      <div>
+        <h3><span lang="fr">Téléphone</span><span lang="en">Phone</span></h3>
+        <a href="tel:+33769900055">07 69 90 00 55</a>
+      </div>
+      <div>
+        <h3>LinkedIn</h3>
+        <a href="https://www.linkedin.com/in/jérémy-claux-66a1b0315/" target="_blank" rel="noopener"><span lang="fr">Mon profil LinkedIn</span><span lang="en">My LinkedIn profile</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="annee"></span> Jérémy Claux</span>
+    <a href="index.html#contact"><span lang="fr">Me contacter</span><span lang="en">Contact me</span></a>
+  </div>
+</footer>
+</body>
+</html>

@@ -289,3 +289,28 @@ footer a { color: #fff; }
 .t-sport      { --c: var(--jaune-pastel);  --vif: #d9a514; }
 .t-carriere   { --c: var(--rose-pastel);   --vif: var(--rose); }
 .t-contact    { --c: var(--gris-pastel);   --vif: var(--encre); }
+
+/* ---------- Langue : on n'affiche que la langue choisie ---------- */
+html[lang="fr"] [lang="en"],
+html[lang="en"] [lang="fr"] { display: none !important; }
+
+/* Menu : le menu se cale à droite, le bouton de langue vient après */
+.top nav { min-width: 0; margin-left: auto; }
+
+/* Bouton FR | EN : la langue active est en foncé */
+.langue {
+  display: inline-flex;
+  padding: 0;
+  overflow: hidden;
+  font: inherit;
+  font-size: .88rem;
+  cursor: pointer;
+  border: 1px solid var(--trait);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--gris);
+}
+.langue span { padding: 4px 11px; }
+html[lang="fr"] .langue .l-fr,
+html[lang="en"] .langue .l-en { background: var(--encre); color: #fff; font-weight: 600; }
+.langue:hover { border-color: var(--encre); }
