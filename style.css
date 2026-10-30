@@ -329,3 +329,13 @@ html[lang="en"] .langue .l-en { background: var(--encre); color: #fff; font-weig
 .profil { display: flex; flex-direction: column; gap: 4px; padding: 16px 18px; border: 1px solid var(--trait); border-left: 6px solid var(--couleur); border-radius: 8px; background: linear-gradient(90deg, var(--teinte) 0%, #fff 100%); }
 .profil a { font-weight: 600; font-size: 1.05rem; }
 .profil .metier { color: var(--gris); font-size: .95rem; }
+
+/* ---- Frise de l'onglet Formation (même principe que Stages) ---- */
+#formation .exp { display: block; }
+#formation .exp { position: relative; padding: 0 0 44px 48px; border-top: 0; }
+#formation .exp:last-of-type { padding-bottom: 0; }
+#formation .exp::before { content: ""; position: absolute; left: 6px; top: 24px; bottom: -24px; width: 4px; border-radius: 2px; background: color-mix(in srgb, var(--couleur) 45%, transparent); }
+#formation .exp:last-of-type::before { display: none; }
+#formation .exp::after { content: ""; position: absolute; left: 0; top: 16px; width: 16px; height: 16px; border-radius: 50%; background: var(--couleur); box-shadow: 0 0 0 4px var(--teinte); }
+#formation .exp p:last-child { margin-bottom: 0; }
+@media (max-width: 520px) { #formation .exp { padding-left: 34px; } }
