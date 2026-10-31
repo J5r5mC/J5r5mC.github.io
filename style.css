@@ -338,3 +338,7 @@ html[lang="en"] .langue .l-en { background: var(--encre); color: #fff; font-weig
 #formation .exp::after { content: ""; position: absolute; left: 0; top: 3px; width: 16px; height: 16px; border-radius: 50%; background: var(--couleur); box-shadow: 0 0 0 4px var(--teinte); }
 #formation .exp p:last-child { margin-bottom: 0; }
 @media (max-width: 520px) { #formation .exp { padding-left: 34px; } }
+
+/* ---- Vidéo de présentation (accueil) ---- */
+.presentation { padding: 56px 0; }
+.presentation video { display: block; width: 100%; max-width: 760px; margin-top: 20px; border-radius: 10px; border: 1px solid var(--trait); background: #000; }
