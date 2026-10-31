@@ -341,4 +341,4 @@ html[lang="en"] .langue .l-en { background: var(--encre); color: #fff; font-weig
 
 /* ---- Vidéo de présentation (accueil) ---- */
 .presentation { padding: 56px 0; }
-.presentation video { display: block; width: 50%; max-width: 380px; margin-top: 20px; border-radius: 10px; border: 1px solid var(--trait); background: #000; }
+.presentation video { display: block; width: 100%; max-width: 380px; margin-top: 20px; border-radius: 10px; border: 1px solid var(--trait); background: #000; }
